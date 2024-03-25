@@ -1,0 +1,10 @@
+{
+    "python.analysis.typeCheckingMode": "basic",
+    "sqlfluff.dialect": "duckdb",
+    "sqlfluff.experimental.format.executeInTerminal": true,
+    "[jinja-sql]": {
+      "editor.defaultFormatter": "dorzey.vscode-sqlfluff",
+      "editor.formatOnSave": false
+  },
+  "files.autoSave": "afterDelay"
+  }
