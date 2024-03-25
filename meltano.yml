@@ -3,7 +3,7 @@ project_id: 4bae24fe-c41f-4360-9d73-326d5989c873
 
 default_environment: dev
 environments:
-- name: dev
+  - name: dev
 
 plugins:
   extractors:
@@ -15,16 +15,15 @@ plugins:
         - catalog
         - discover
       config:
-        years: 2
-        
+        years: 1
+
   loaders:
-  - name: target-postgres
-    variant: meltanolabs
-    pip_url: meltanolabs-target-postgres
-    config:
-      dbname: "postgres"
-      user: "postgres"
-      password: "postgres"
-      host: "localhost"
-      port: 5432
-      schema: "staging"
+    - name: target-postgres
+      variant: meltanolabs
+      pip_url: meltanolabs-target-postgres
+      config:
+        host: localhost
+        port: 5432
+        user: postgres
+        database: postgres
+        default_target_schema: staging
