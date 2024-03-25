@@ -8,7 +8,8 @@
 
     // Features to add to the dev container. More info: https://containers.dev/features.
     "features": {
-        "ghcr.io/eitsupi/devcontainer-features/go-task:1": {}
+        "ghcr.io/eitsupi/devcontainer-features/go-task:1": {},
+        "ghcr.io/devcontainers-contrib/features/meltano:2": {}
     },
 
     // Use 'forwardPorts' to make a list of ports inside the container available locally.
