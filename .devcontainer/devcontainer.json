@@ -31,7 +31,9 @@
         "GitHub.codespaces",
         "eamodio.gitlens",
         "samuelcolvin.jinjahtml",
-        "dorzey.vscode-sqlfluff"
+        "dorzey.vscode-sqlfluff",
+        "mtxr.sqltools-driver-pg",
+        "mtxr.sqltools"
       ]
     }
   }
