@@ -1,15 +1,22 @@
 version: 1
 default_environment: dev
 project_id: 4bae24fe-c41f-4360-9d73-326d5989c873
+
+default_environment: dev
 environments:
 - name: dev
-- name: staging
-- name: prod
+
 plugins:
-  extractors:
-  - name: tap-csv
-    variant: meltanolabs
-    pip_url: git+https://github.com/MeltanoLabs/tap-csv.git
+    - name: tap-jaffle-shop
+      namespace: tap_jaffle_shop
+      variant: meltanolabs
+      pip_url: git+https://github.com/MeltanoLabs/tap-jaffle-shop.git@v0.3.0
+      capabilities:
+        - catalog
+        - discover
+      config:
+        years: 2
+        
   loaders:
   - name: target-postgres
     variant: meltanolabs
