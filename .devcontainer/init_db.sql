@@ -1,0 +1,11 @@
+﻿/* Staging */
+CREATE SCHEMA IF NOT EXISTS staging;
+
+/* Data vault */
+CREATE SCHEMA IF NOT EXISTS hubs;
+CREATE SCHEMA IF NOT EXISTS links;
+CREATE SCHEMA IF NOT EXISTS satellites;
+
+/* Data marts */
+CREATE SCHEMA IF NOT EXISTS facts;
+CREATE SCHEMA IF NOT EXISTS dimensions;
