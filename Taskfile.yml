@@ -8,3 +8,4 @@ tasks:
       - python -m pip install --progress-bar off -r requirements.txt
       - meltano add extractor tap-jaffle-shop
       - meltano add loader target-postgres
+      - meltano add utility dbt-postgres

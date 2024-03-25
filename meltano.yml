@@ -27,3 +27,14 @@ plugins:
         user: postgres
         database: postgres
         default_target_schema: staging
+
+  utilities:
+    - name: dbt-postgres
+      variant: dbt-labs
+      pip_url: dbt-core dbt-postgres git+https://github.com/meltano/dbt-ext.git@main
+      config:
+        dbname: postgres
+        host: localhost
+        port: 5432
+        schema: staging
+        user: postgres
