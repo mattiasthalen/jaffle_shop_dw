@@ -15,7 +15,7 @@ plugins:
         - catalog
         - discover
       config:
-        years: 1
+        years: 2
 
   loaders:
     - name: target-postgres
