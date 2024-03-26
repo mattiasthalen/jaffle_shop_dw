@@ -1,0 +1,9 @@
+# models/sources.yml
+
+version: 2
+
+sources:
+  - name: staging
+    schema: staging
+    tables:
+      - name: raw_customers
