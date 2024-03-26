@@ -23,10 +23,13 @@ clean-targets:
 models:
   jaffle_shop_dw:
     staging:
+      +schema: staging
       materialized: view
       tags: ["staging"]
-    data_vault:
+    vault:
+      +schema: vault
       tags: ["vault"]
     marts:
+      +schema: marts
       materialized: table
       tags: ["mart"]
