@@ -2,10 +2,11 @@
 
 {%- set yaml_metadata -%}
 source_model:
-  staging: "raw_customers"
+  staging: "raw_supplies"
 
 derived_columns:
-  customer_id: "id"
+  supply_id: "id"
+  product_id: "sku"
   source: "!tap-jaffle-shop"
   load_date: "_sdc_extracted_at"
   effective_from: "_sdc_extracted_at"
@@ -13,14 +14,24 @@ derived_columns:
   end_date: "DATE('9999-12-31')"
 
 hashed_columns:
-  customer_hk:
-    - "customer_id"
+  supply_hk:
+    - "supply_id"
     - "source"
-  customer_hashdiff:
+  product_hk:
+    - "product_id"
+    - "source"
+  product_supply_hk:
+    - "product_id"
+    - "supply_id"
+    - "source"
+  supply_hashdiff:
     is_hashdiff: true
     columns:
-      - "customer_id"
+      - "supply_id"
+      - "product_id"
       - "name"
+      - "cost"
+      - "perishable"
 {%- endset -%}
 
 {% set metadata_dict = fromyaml(yaml_metadata) %}
