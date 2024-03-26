@@ -23,7 +23,8 @@
   "customizations": {
     "vscode": {
       "settings": {
-        "terminal.integrated.defaultProfile.linux": "zsh"
+        "terminal.integrated.defaultProfile.linux": "zsh",
+        "files.encoding": "utf8"
       },
       "extensions": [
         "esbenp.prettier-vscode",
