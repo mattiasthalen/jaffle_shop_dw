@@ -26,9 +26,12 @@ models:
       +schema: staging
       materialized: view
       tags: ["staging"]
-    vault:
-      +schema: vault
-      tags: ["vault"]
+    raw_vault:
+      +schema: raw_vault
+      tags: ["raw_vault"]
+    business_vault:
+      +schema: business_vault
+      tags: ["business_vault"]
     marts:
       +schema: marts
       materialized: table
