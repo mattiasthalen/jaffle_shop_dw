@@ -26,12 +26,10 @@
         "terminal.integrated.defaultProfile.linux": "zsh"
       },
       "extensions": [
-        "dorzey.vscode-sqlfluff",
         "esbenp.prettier-vscode",
         "GitHub.codespaces",
         "eamodio.gitlens",
         "samuelcolvin.jinjahtml",
-        "dorzey.vscode-sqlfluff",
         "mtxr.sqltools-driver-pg",
         "mtxr.sqltools"
       ]
