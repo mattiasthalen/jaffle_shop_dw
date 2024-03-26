@@ -1,2 +1,2 @@
-﻿pgcli~=4.0.1
+pgcli~=4.0.1
 pre-commit~=3.0.4

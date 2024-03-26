@@ -1,4 +1,4 @@
-﻿/* Staging */
+/* Staging */
 CREATE SCHEMA IF NOT EXISTS staging;
 
 /* Data vault */
