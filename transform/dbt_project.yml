@@ -1,24 +1,32 @@
 name: jaffle_shop_dw
-version: '1.0'
+version: "1.0"
 profile: meltano
 config-version: 2
 require-dbt-version: [">=1.0.0", "<2.0.0"]
 model-paths:
-- models
+  - models
 analysis-paths:
-- analysis
+  - analysis
 test-paths:
-- tests
+  - tests
 seed-paths:
-- data
+  - data
 macro-paths:
-- macros
+  - macros
 snapshot-paths:
-- snapshots
+  - snapshots
 log-path: logs
 packages-install-path: dbt_packages
 clean-targets:
-- dbt_packages
-- logs
+  - dbt_packages
+  - logs
 models:
-  jaffle_shop_dw: null
+  jaffle_shop_dw:
+    staging:
+      materialized: view
+      tags: ["staging"]
+    data_vault:
+      tags: ["vault"]
+    marts:
+      materialized: table
+      tags: ["mart"]
