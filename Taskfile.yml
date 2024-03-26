@@ -9,3 +9,4 @@ tasks:
       - meltano add extractor tap-jaffle-shop
       - meltano add loader target-postgres
       - meltano add utility dbt-postgres
+      - meltano invoke dbt-postgres:deps
