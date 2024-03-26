@@ -1,8 +1,8 @@
-{{ config(materialized='incremental', schema='hubs') }}
+{{ config(materialized='incremental') }}
 
-{%- set source_model = "v_stg_orders" -%}
-{%- set src_pk = "order_hk" -%}
-{%- set src_nk = "order_id" -%}
+{%- set source_model = "v_stg_customers" -%}
+{%- set src_pk = "customer_hk" -%}
+{%- set src_nk = "customer_id" -%}
 {%- set src_ldts = "load_date" -%}
 {%- set src_source = "source" -%}
 
