@@ -6,6 +6,7 @@ source_model:
 
 derived_columns:
   order_id: "id"
+  customer_id: "customer"
   source: "!tap-jaffle-shop"
   load_date: "_sdc_extracted_at"
   effective_from: "ordered_at"
@@ -23,13 +24,18 @@ hashed_columns:
     - "store_id"
     - "order_id"
     - "source"
+  customer_hk:
+    - "customer_id"
+    - "source"
+  customer_order_hk:
+    - "customer_id"
+    - "order_id"
+    - "source"
   order_hashdiff:
     is_hashdiff: true
     columns:
       - "order_id"
-      - "customer"
       - "ordered_at"
-      - "store_id"
       - "subtotal"
       - "tax_paid"
       - "order_total"
