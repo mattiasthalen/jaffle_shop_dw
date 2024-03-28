@@ -28,7 +28,6 @@ hashed_columns:
     is_hashdiff: true
     columns:
       - "supply_id"
-      - "product_id"
       - "name"
       - "cost"
       - "perishable"
