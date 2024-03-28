@@ -33,7 +33,8 @@
         "eamodio.gitlens",
         "samuelcolvin.jinjahtml",
         "mtxr.sqltools-driver-pg",
-        "mtxr.sqltools"
+        "mtxr.sqltools",
+        "dorzey.vscode-sqlfluff"
       ]
     }
   }

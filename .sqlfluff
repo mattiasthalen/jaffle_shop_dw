@@ -1,0 +1,8 @@
+[sqlfluff]
+templater = dbt
+dialect = postgres
+
+[sqlfluff:templater:dbt]
+project_dir = transform
+profiles_dir = transform/profiles/postgres
+profile = meltano
