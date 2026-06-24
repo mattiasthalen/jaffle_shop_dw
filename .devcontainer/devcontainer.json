@@ -10,7 +10,7 @@
   "features": {
     "ghcr.io/eitsupi/devcontainer-features/go-task:1": {},
     "ghcr.io/devcontainers-contrib/features/meltano:2": {},
-    "ghcr.io/devcontainers/features/node:1": {}
+    "ghcr.io/devcontainers/features/node:2": {}
   },
 
   // Use 'forwardPorts' to make a list of ports inside the container available locally.
